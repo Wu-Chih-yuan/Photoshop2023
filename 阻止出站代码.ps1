@@ -1,10 +1,10 @@
 <#
-×èÖ¹PhotoshopµÄ³öÕ¾Á¬½Ó
-ÓÃPowerShell¹ÜÀíÔ±ÔËÐÐ
-°ÑÏÂÃæ±äÁ¿rootµÄÖµÉèÖÃÎªÄãÊµ¼Ê°²×°PhotoshopµÄÄ¿Â¼
+é˜»æ­¢å‡ºç«™è¿žæŽ¥ä»¥å¯¹è½¯ä»¶æ–­ç½‘
+ç”¨PowerShellç®¡ç†å‘˜è¿è¡Œ
+æŠŠä¸‹é¢å˜é‡rootçš„å€¼è®¾ç½®ä¸ºä½ å®žé™…å®‰è£…çš„ç›®å½•
 #>
 
-$root = "D:\Photoshop°²×°Ä¿Â¼"
+$root = "D:\Adobeå®‰è£…ç›®å½•"
 
 Get-ChildItem -LiteralPath $root -Recurse -Filter *.exe -File | ForEach-Object {
     New-NetFirewallRule `
